@@ -1,11 +1,12 @@
 button {
-  max-width: 9.375rem; /* 150px */
+  width: 9.375rem; /* 150px */
   height: $space-l;
   border-radius: $border-radius-rounded;
   text-transform: capitalize;
   background-color: $neutral-gray-color;
   border: $border-size-s solid $neutral-gray-color;
   padding: $space-xxs $space-s $space-xs $space-s;
+  margin-top: $space-base;
 
   &:hover {
     background-color: transparent;

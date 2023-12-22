@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5.5rem; /*88px*/
+    padding: $space-xl $space-none; /*88px*/
 }
 
 .card__bottom-border-radius--soft {
