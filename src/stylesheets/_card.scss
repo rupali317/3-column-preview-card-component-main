@@ -21,22 +21,36 @@ p {
   color: $neutral-white-color;
 }
 
+@mixin card-theme(
+  $background-color,
+  $top-left-radius: $border-radius-none,
+  $top-right-radius: $border-radius-none,
+  $bottom-left-radius: $border-radius-none,
+  $bottom-right-radius: $border-radius-none
+) {
+  background-color: $background-color;
+  border-top-left-radius: $top-left-radius;
+  border-top-right-radius: $top-right-radius;
+  border-bottom-left-radius: $bottom-left-radius;
+  border-bottom-right-radius: $bottom-right-radius;
+}
+
 .card--sedan {
-  background-color: $sedan-color;
-  border-top-left-radius: $border-radius-soft;
-  border-top-right-radius: $border-radius-soft;
-  border-bottom-left-radius: $border-radius-none;
-  border-bottom-right-radius: $border-radius-none;
+  @include card-theme(
+    $sedan-color,
+    $top-left-radius: $border-radius-soft,
+    $top-right-radius: $border-radius-soft
+  );
 }
 
 .card--suvs {
-  background-color: $suv-color;
+  @include card-theme($suv-color);
 }
 
 .card--luxury {
-  background-color: $luxury-color;
-  border-top-left-radius: $border-radius-none;
-  border-top-right-radius: $border-radius-none;
-  border-bottom-left-radius: $border-radius-soft;
-  border-bottom-right-radius: $border-radius-soft;
+  @include card-theme(
+    $luxury-color,
+    $bottom-left-radius: $border-radius-soft,
+    $bottom-right-radius: $border-radius-soft
+  );
 }
