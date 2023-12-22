@@ -10,7 +10,7 @@ button {
 
   &:hover {
     background-color: transparent;
-    border: $border-size-s solid $neutral-white-color-opacity;
+    border: $border-size-s solid $neutral-white-color;
     color: $neutral-white-color;
     cursor: pointer;
   }
