@@ -10,6 +10,6 @@ export const Card = (props) => (
         {props.description}
       </p>
     </article>
-    <Button className={props.buttonClassName} label={props.title}></Button>
+    <Button className={props.buttonClassName} ></Button>
   </section>
 )
