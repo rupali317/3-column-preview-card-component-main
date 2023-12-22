@@ -9,7 +9,7 @@ export const GroupCard = () => (
       altText="Logo for sedans"
       title="Sedans"
       description="Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip."
-      className="card card--sedan" 
+      className="card card--sedan"
       buttonClassName="card__button--sedan"
     />
     <Card
