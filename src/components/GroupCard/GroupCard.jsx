@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "../Card/index.js";
-//import { CardData } from "../../cardData.js";
+//import { CardData } from "../../cardData.js";  How best to use it?
 
 export const GroupCard = () => (
   <div>
