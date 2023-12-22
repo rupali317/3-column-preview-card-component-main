@@ -21,9 +21,9 @@ $font-weight-regular: 400;
 
 /* Spacing */
 $space-none: 0rem;
-$space-xxs: 0.6875rem;/* 11px */
-$space-xs: 0.75rem;/* 12px */
-$space-s:  1.84375rem; /* 29.5px */
+$space-xxs: 0.6875rem; /* 11px */
+$space-xs: 0.75rem; /* 12px */
+$space-s: 1.84375rem; /* 29.5px */
 $space-base: 1.5625rem; /* 25px */
 $space-m: 2.1875rem; /* 35px */
 $space-l: 3rem; /* 48px*/
@@ -35,19 +35,20 @@ $border-radius-soft: 8px;
 $border-radius-rounded: 25px;
 $border-size-s: 2px; /* 0.125rem */
 
-
 @font-face {
-    font-family: "Lexend Deca";
-    src: url("../../public/fonts/LexendDeca/static/LexendDeca-Regular.ttf") format("truetype");
-    font-weight: $font-weight-regular;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Lexend Deca";
+  src: url("../../public/fonts/LexendDeca/static/LexendDeca-Regular.ttf")
+    format("truetype");
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Big Shoulders Display";
-    src: url("../../public/fonts/BigShouldersDisplay/static/BigShouldersDisplay-Bold.ttf") format("truetype");
-    font-weight: $font-weight-bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Big Shoulders Display";
+  src: url("../../public/fonts/BigShouldersDisplay/static/BigShouldersDisplay-Bold.ttf")
+    format("truetype");
+  font-weight: $font-weight-bold;
+  font-style: normal;
+  font-display: swap;
 }

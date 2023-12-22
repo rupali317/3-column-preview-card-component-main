@@ -1,42 +1,42 @@
 .card {
-    padding: $space-l;
-    max-width: 20.4375rem; /* 327px */
-    min-height: 27.625rem; /* 442px */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  padding: $space-l;
+  max-width: 20.4375rem; /* 327px */
+  min-height: 27.625rem; /* 442px */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 h1 {
-    margin-top: $space-m;
-    font-family: "Big Shoulders Display", sans-serif;
-    font-size: $font-size-large;
-    line-height: $line-height-large;
-    font-weight: $font-weight-bold;
-    color: $neutral-gray-color;
+  margin-top: $space-m;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: $font-size-large;
+  line-height: $line-height-large;
+  font-weight: $font-weight-bold;
+  color: $neutral-gray-color;
 }
 
 p {
-    margin-top: $space-base;
-    color: $neutral-white-color;
+  margin-top: $space-base;
+  color: $neutral-white-color;
 }
 
 .card--sedan {
-    background-color: $sedan-color;
-    border-top-left-radius: $border-radius-soft;
-    border-top-right-radius: $border-radius-soft;
-    border-bottom-left-radius: $border-radius-none;
-    border-bottom-right-radius: $border-radius-none;
+  background-color: $sedan-color;
+  border-top-left-radius: $border-radius-soft;
+  border-top-right-radius: $border-radius-soft;
+  border-bottom-left-radius: $border-radius-none;
+  border-bottom-right-radius: $border-radius-none;
 }
 
 .card--suvs {
-    background-color: $suv-color;
+  background-color: $suv-color;
 }
 
 .card--luxury {
-    background-color: $luxury-color;
-    border-top-left-radius: $border-radius-none;
-    border-top-right-radius: $border-radius-none;
-    border-bottom-left-radius: $border-radius-soft;
-    border-bottom-right-radius: $border-radius-soft;
+  background-color: $luxury-color;
+  border-top-left-radius: $border-radius-none;
+  border-top-right-radius: $border-radius-none;
+  border-bottom-left-radius: $border-radius-soft;
+  border-bottom-right-radius: $border-radius-soft;
 }

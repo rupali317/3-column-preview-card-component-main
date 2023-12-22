@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Footer = () => (
-  <p>
+  <small>
     Challenge by{" "}
     <a
       rel="noreferrer"
@@ -19,5 +19,5 @@ export const Footer = () => (
       Rupali Roy Choudhury
     </a>
     .
-  </p>
+  </small>
 );

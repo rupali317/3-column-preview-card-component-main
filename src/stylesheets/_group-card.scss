@@ -1,35 +1,11 @@
 body {
-    font-family: "Lexend Deca", sans-serif;
-    font-size: $font-size-base;
-    line-height: $line-height-base;
-    font-weight: $font-weight-regular;
-    background-color: $neutral-gray-color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: $space-xl $space-none; /*88px*/
+  font-family: "Lexend Deca", sans-serif;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-weight: $font-weight-regular;
+  background-color: $neutral-gray-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $space-xl $space-none;
 }
-
-.card__border-radius--sedan {
-    border-top-left-radius: $border-radius-soft;
-    border-top-right-radius: $border-radius-soft;
-    border-bottom-left-radius: $border-radius-none;
-    border-bottom-right-radius: $border-radius-none;
-}
-
-.card__border-radius--luxury {
-    border-top-left-radius: $border-radius-none;
-    border-top-right-radius: $border-radius-none;
-    border-bottom-left-radius: $border-radius-soft;
-    border-bottom-right-radius: $border-radius-soft;
-}
-
-/*.card__left-border-radius--soft {
-    border-top-left-radius: $border-radius-soft;
-    border-bottom-left-radius: $border-radius-soft;
-}
-
-.card__right-border-radius--soft {
-    border-top-right-radius: $border-radius-soft;
-    border-bottom-right-radius: $border-radius-soft;
-}*/
