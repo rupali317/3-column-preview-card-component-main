@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "../src/stylesheets/index.scss";
+import "./stylesheets/Index.scss";
 import { GroupCard } from "./components/GroupCard/index.js";
 import { Footer } from "./components/Footer/index.js";
 import reportWebVitals from "./reportWebVitals";
