@@ -23,6 +23,10 @@ p {
 
 .card--sedan {
     background-color: $sedan-color;
+    border-top-left-radius: $border-radius-soft;
+    border-top-right-radius: $border-radius-soft;
+    border-bottom-left-radius: $border-radius-none;
+    border-bottom-right-radius: $border-radius-none;
 }
 
 .card--suvs {
@@ -31,4 +35,8 @@ p {
 
 .card--luxury {
     background-color: $luxury-color;
+    border-top-left-radius: $border-radius-none;
+    border-top-right-radius: $border-radius-none;
+    border-bottom-left-radius: $border-radius-soft;
+    border-bottom-right-radius: $border-radius-soft;
 }

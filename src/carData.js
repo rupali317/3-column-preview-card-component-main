@@ -4,7 +4,7 @@ export const CarData = [
         altText: "Logo for sedans",
         title: "Sedans",
         description: "Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip." ,
-        className: "card card--sedan card__left-border-radius--soft card__top-border-radius--soft",
+        className: "card card--sedan",
         buttonClassName: "card__button--sedan"
     },
     {
@@ -20,7 +20,7 @@ export const CarData = [
         altText: "Logo for luxury",
         title: "Luxury",
         description: "Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style." ,
-        className: "card card--luxury card__right-border-radius--soft card__bottom-border-radius--soft",
+        className: "card card--luxury",
         buttonClassName: "card__button--luxury" 
     }
 ]
