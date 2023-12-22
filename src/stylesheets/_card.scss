@@ -19,7 +19,7 @@ h1 {
 
 p {
   margin-top: $space-base;
-  color: $neutral-white-color;
+  color: $neutral-white-color-opacity;
 }
 
 @mixin card-theme(
