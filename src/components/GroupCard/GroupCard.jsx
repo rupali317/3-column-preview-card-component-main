@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "../Card/index.js";
-//import { CarData } from "../../carData.js";
+//import { CardData } from "../../cardData.js";
 
 export const GroupCard = () => (
   <div>

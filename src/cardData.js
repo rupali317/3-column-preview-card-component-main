@@ -1,4 +1,4 @@
-export const CarData = [
+export const CardData = [
     {
         src: "/images/icon-sedans.svg",
         altText: "Logo for sedans",
