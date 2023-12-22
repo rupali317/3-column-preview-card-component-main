@@ -1,7 +1,7 @@
 .card {
   padding: $space-l;
-  max-width: 20.4375rem; /* 327px */    /*take this out*/
-  min-height: 27.625rem; /* 442px */    /*take this out*/
+  max-width: 20.4375rem; /* 327px */    
+  min-height: 27.625rem; /* 442px */   
   display: flex;
   flex-direction: column;  
   justify-content: space-between;
@@ -35,7 +35,7 @@ p {
   border-bottom-right-radius: $bottom-right-radius;
 }
 
-.card--sedan {   /*take this out*/
+.card--sedan {  
   @include card-theme(
     $sedan-color,
     $top-left-radius: $border-radius-soft,
@@ -43,14 +43,37 @@ p {
   );
 }
 
-.card--suvs {  /*take this out*/
+.card--suvs { 
   @include card-theme($suv-color);
 }
 
-.card--luxury {   /*take this out*/
+.card--luxury {  
   @include card-theme(
     $luxury-color,
     $bottom-left-radius: $border-radius-soft,
     $bottom-right-radius: $border-radius-soft
   );
+}
+
+@media (min-width: $desktop-layout-width) {
+  .card--sedan {  
+    @include card-theme(
+      $sedan-color,
+      $top-left-radius: $border-radius-soft,
+      $bottom-left-radius: $border-radius-soft
+    );
+  }
+
+  .card--luxury {  
+    @include card-theme(
+      $luxury-color,
+      $top-right-radius: $border-radius-soft,
+      $bottom-right-radius: $border-radius-soft
+    );
+  }
+
+  .card {
+    max-width: 19.1875rem; /* 307px */    
+    min-height: 31.25rem; /* 500px */  
+  }
 }
