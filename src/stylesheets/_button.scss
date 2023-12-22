@@ -14,6 +14,13 @@ button {
     color: $neutral-white-color;
     cursor: pointer;
   }
+
+  /*&:focus {
+    background-color: transparent;
+    border: $border-size-s solid $neutral-white-color;
+    color: $neutral-white-color;
+    cursor: pointer;
+  }*/
 }
 
 .card__button--sedan {
