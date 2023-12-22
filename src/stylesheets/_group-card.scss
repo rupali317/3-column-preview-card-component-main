@@ -5,7 +5,12 @@ body {
   font-weight: $font-weight-regular;
   background-color: $neutral-gray-color;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column;     
+  align-items: center;        
   padding: $space-xl $space-none;
+}
+
+main > div{
+  display: flex;
+  flex-direction: column;   /*take this out*/
 }

@@ -1,9 +1,9 @@
 .card {
   padding: $space-l;
-  max-width: 20.4375rem; /* 327px */
-  min-height: 27.625rem; /* 442px */
+  max-width: 20.4375rem; /* 327px */    /*take this out*/
+  min-height: 27.625rem; /* 442px */    /*take this out*/
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
   justify-content: space-between;
 }
 
@@ -35,7 +35,7 @@ p {
   border-bottom-right-radius: $bottom-right-radius;
 }
 
-.card--sedan {
+.card--sedan {   /*take this out*/
   @include card-theme(
     $sedan-color,
     $top-left-radius: $border-radius-soft,
@@ -43,11 +43,11 @@ p {
   );
 }
 
-.card--suvs {
+.card--suvs {  /*take this out*/
   @include card-theme($suv-color);
 }
 
-.card--luxury {
+.card--luxury {   /*take this out*/
   @include card-theme(
     $luxury-color,
     $bottom-left-radius: $border-radius-soft,
