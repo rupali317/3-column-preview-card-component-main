@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { GroupCard } from "./components/GroupCard/index.js";
 import { Footer } from "./components/Footer/index.js";
 import reportWebVitals from "./reportWebVitals";
+import "./stylesheets/index.scss";
 
 const groupCard = ReactDOM.createRoot(document.getElementById("main"));
 const footer = ReactDOM.createRoot(document.getElementById("footer"));

@@ -11,9 +11,13 @@ export const Footer = () => (
       Frontend Mentor
     </a>
     . Coded by{" "}
-    <a rel="noreferrer" href="https://www.linkedin.com/in/rupali-rc/">
+    <a
+      rel="noreferrer"
+      href="https://www.linkedin.com/in/rupali-rc/"
+      target="_blank"
+    >
       Rupali Roy Choudhury
     </a>
     .
   </p>
-)
+);
