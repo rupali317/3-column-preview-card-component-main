@@ -5,7 +5,7 @@ export const Card = (props) => (
   <section className={props.className}>
     <article>
       <img src={props.src} alt={props.altText} width="64" height="40"></img>
-      <h1>{props.title}</h1>
+      <h1 aria-label={"Heading for " + props.title}>{props.title}</h1>
       <p>
         {props.description}
       </p>
