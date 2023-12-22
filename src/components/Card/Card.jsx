@@ -6,7 +6,7 @@ export const Card = (props) => (
     <article>
       <img src={props.src} alt={props.altText} width="64" height="40"></img>
       <h1 aria-label={"Heading for " + props.title}>{props.title}</h1>
-      <p aria-label={"Description for " + props.title}>
+      <p>
         {props.description}
       </p>
     </article>
