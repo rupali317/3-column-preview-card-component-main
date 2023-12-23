@@ -7,7 +7,8 @@ $sedan-color: hsla(31, 76%, 52%, 1);
 $suv-color: hsla(184, 100%, 22%, 1);
 $luxury-color: hsla(179, 100%, 13%, 1);
 $link-color: hsl(228, 45%, 44%);
-$neutral-white-color-opacity: hsla(0, 0%, 100%, 0.75);
+$neutral-white-color-opacity-1: hsla(0, 0%, 100%, 0.75);
+$neutral-white-color-opacity-2: hsla(0, 0%, 100%, 0.5);
 $neutral-white-color: hsla(0, 0%, 100%, 1);
 $neutral-gray-color: hsl(0, 0%, 95%);
 $neutral-black-color: hsl(0, 0%, 13%);
@@ -38,7 +39,7 @@ $border-size-s: 0.125rem; /* 2px */
 $border-size-m: 0.25rem; /* 4px */
 
 /* Box shadows */
-$box-shadow-button-focus: 0rem 0rem 0rem 0.25rem $neutral-white-color;
+$box-shadow-button-focus: 0rem 0rem 0rem 0.25rem $neutral-white-color-opacity-2;
 
 @font-face {
   font-family: "Lexend Deca";
