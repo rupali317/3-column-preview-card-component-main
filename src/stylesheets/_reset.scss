@@ -44,12 +44,6 @@ button {
   font: inherit;
 }
 
-/* Remove browser's default value for outlining a button during focus state */
-button:focus-visible,
-button:focus {
-  outline: none;
-}
-
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;

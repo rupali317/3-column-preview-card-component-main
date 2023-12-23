@@ -12,7 +12,7 @@ body {
 }
 
 main {
-  > div {
+  > .group-card {
     display: flex;
     flex-direction: column;
   }
@@ -20,7 +20,7 @@ main {
 
 @media (min-width: $desktop-layout-width) {
   main {
-    > div {
+    > .group-card {
       flex-direction: row;
     }
   }

@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./stylesheets/index.scss";
-import { GroupCard } from "./components/GroupCard/index.js";
-import { Footer } from "./components/Footer/index.js";
+import { GroupCard } from "./components/GroupCard";
+import { Footer } from "./components/Footer";
 import reportWebVitals from "./reportWebVitals";
 
 const groupCard = ReactDOM.createRoot(document.getElementById("main"));

@@ -5,6 +5,41 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  a {
+    width: 9.375rem; /* 150px */
+    height: $space-l;
+    border-radius: $border-radius-rounded;
+    text-transform: capitalize;
+    background-color: $neutral-gray-color;
+    border: $border-size-s solid $neutral-gray-color;
+    padding: $space-xxs $space-s $space-xs $space-s;
+    margin-top: $space-base;
+    text-decoration: none;
+
+    &%link-pseudo-class-definitions {
+      background-color: transparent;
+      color: $neutral-white-color;
+      border: $border-size-s solid $neutral-white-color;
+      cursor: pointer;
+    }
+
+    &:hover {
+      @extend %link-pseudo-class-definitions;
+    }
+
+    &:focus {
+      @extend %link-pseudo-class-definitions;
+      box-shadow: $box-shadow-action-focus;
+      outline: none;
+    }
+
+    &:focus-visible {
+      @extend %link-pseudo-class-definitions;
+      box-shadow: $box-shadow-action-focus;
+      outline: none;
+    }
+  }
 }
 
 h1 {
@@ -22,6 +57,7 @@ p {
   color: $neutral-white-color-opacity-1;
 }
 
+/* Radius will not work on the group-level, hence built the mixin card-theme styles */
 @mixin card-theme(
   $background-color,
   $top-left-radius: $border-radius-none,
@@ -42,10 +78,18 @@ p {
     $top-left-radius: $border-radius-soft,
     $top-right-radius: $border-radius-soft
   );
+
+  a {
+    color: $sedan-color;
+  }
 }
 
 .card--suvs {
   @include card-theme($suv-color);
+
+  a {
+    color: $suv-color;
+  }
 }
 
 .card--luxury {
@@ -54,6 +98,10 @@ p {
     $bottom-left-radius: $border-radius-soft,
     $bottom-right-radius: $border-radius-soft
   );
+
+  a {
+    color: $luxury-color;
+  }
 }
 
 @media (min-width: $desktop-layout-width) {
