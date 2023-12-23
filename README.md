@@ -16,8 +16,6 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -54,6 +52,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [SCSS](https://sass-lang.com/) - For styles
+
+### Tested with
+
+- To be written
+-
 
 ### What I learned
 
