@@ -37,6 +37,9 @@ $border-radius-rounded: 1.5625rem; /* 25px; */
 $border-size-s: 0.125rem; /* 2px */
 $border-size-m: 0.25rem; /* 4px */
 
+/* Box shadows */
+$box-shadow-button-focus: 0rem 0rem 0rem 0.25rem $neutral-white-color;
+
 @font-face {
   font-family: "Lexend Deca";
   src: url("../../public/fonts/LexendDeca/static/LexendDeca-Regular.ttf")

@@ -1,6 +1,7 @@
 %button-psuedo-class-definitions {
   background-color: transparent;
   color: $neutral-white-color;
+  border: $border-size-s solid $neutral-white-color;
   cursor: pointer;
 }
 
@@ -16,17 +17,16 @@ button {
 
   &:hover {
     @extend %button-psuedo-class-definitions;
-    border: $border-size-s solid $neutral-white-color;
   }
 
   &:focus {
     @extend %button-psuedo-class-definitions;
-    outline: $border-size-m solid $neutral-white-color;
+    box-shadow: $box-shadow-button-focus;
   }
 
   &:focus-visible {
     @extend %button-psuedo-class-definitions;
-    outline: $border-size-m solid $neutral-white-color;
+    box-shadow: $box-shadow-button-focus;
   }
 }
 
