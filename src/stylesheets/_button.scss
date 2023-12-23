@@ -1,10 +1,3 @@
-%button-psuedo-class-definitions {
-  background-color: transparent;
-  color: $neutral-white-color;
-  border: $border-size-s solid $neutral-white-color;
-  cursor: pointer;
-}
-
 button {
   width: 9.375rem; /* 150px */
   height: $space-l;
@@ -15,17 +8,24 @@ button {
   padding: $space-xxs $space-s $space-xs $space-s;
   margin-top: $space-base;
 
+  &%button-pseudo-class-definitions {
+    background-color: transparent;
+    color: $neutral-white-color;
+    border: $border-size-s solid $neutral-white-color;
+    cursor: pointer;
+  }
+
   &:hover {
-    @extend %button-psuedo-class-definitions;
+    @extend %button-pseudo-class-definitions;
   }
 
   &:focus {
-    @extend %button-psuedo-class-definitions;
+    @extend %button-pseudo-class-definitions;
     box-shadow: $box-shadow-button-focus;
   }
 
   &:focus-visible {
-    @extend %button-psuedo-class-definitions;
+    @extend %button-pseudo-class-definitions;
     box-shadow: $box-shadow-button-focus;
   }
 }
