@@ -6,7 +6,7 @@ const CardComponents = Object.keys(CardData).map((key) => {
   const data = CardData[key];
   return (
     <Card
-      key={key}
+      key={key }
       src={data.src}
       altText={data.altText}
       title={data.title}
