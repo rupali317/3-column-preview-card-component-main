@@ -8,6 +8,10 @@ export const Card = (props) => (
       <h1 aria-label={"Heading for " + props.title}>{props.title}</h1>
       <p>{props.description}</p>
     </article>
-    <Button className={props.buttonClassName} label={props.title}></Button>
+    <Button
+      className={props.buttonClassName}
+      label={props.title}
+      tabIndexOrder={props.tabIndexOrder}
+    ></Button>
   </section>
 );

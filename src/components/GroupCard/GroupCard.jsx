@@ -11,6 +11,7 @@ export const GroupCard = () => (
       description="Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip."
       className="card card--sedan"
       buttonClassName="card__button--sedan"
+      tabIndexOrder="0"
     />
     <Card
       src="/images/icon-suvs.svg"
@@ -19,6 +20,7 @@ export const GroupCard = () => (
       description="Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures."
       className="card card--suvs"
       buttonClassName="card__button--suv"
+      tabIndexOrder="1"
     />
     <Card
       src="/images/icon-luxury.svg"
@@ -27,6 +29,7 @@ export const GroupCard = () => (
       description="Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style."
       className="card card--luxury"
       buttonClassName="card__button--luxury"
+      tabIndexOrder="2"
     />
   </div>
 );
