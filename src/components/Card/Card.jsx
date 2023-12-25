@@ -7,7 +7,11 @@ export const Card = (props) => (
       <h1 aria-label={"Heading for " + props.title}>{props.title}</h1>
       <p>{props.description}</p>
     </article>
-    <a role="button" aria-label={"Learn more about " + props.title} href="#main">
+    <a
+      role="button"
+      aria-label={"Learn more about " + props.title}
+      href="#main"
+    >
       learn more
     </a>
   </section>

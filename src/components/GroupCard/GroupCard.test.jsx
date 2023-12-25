@@ -14,8 +14,8 @@ describe("Group Card component", () => {
   });
 
   test("is accessible", async () => {
-    const {container} = render(<GroupCard />);
-    
+    const { container } = render(<GroupCard />);
+
     // Run accessibility tests
     const results = await axe(container);
     expect(results).toHaveNoViolations();
