@@ -62,8 +62,10 @@ Users should be able to:
 
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - React Testing Library helps you test your React components to make sure they work as expected when users interact with them.
 - AXE Dev Tools -  allows you to perform automated accessibility testing on React components 
-- Browsers: Google Chrome, Firefox, Safari, Brave, Microsoft Edge
+- Browsers used for testing: Google Chrome, Firefox, Safari, Brave, Microsoft Edge
 - Devices: 
+  - (Real) MacBook Pro (15 inch), Samsung Galaxy A33 5G, Samsung Galaxy S20+
+  - (Virtual) The mobile and tablet devices under Chrome's dev console
 
 ### What I learned
 
@@ -97,10 +99,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Fixing focus for Safari](https://itnext.io/fixing-focus-for-safari-b5916fef1064?gi=842cad91af3c#:~:text=The%20reason%20is%20that%20macOS,of%20with%20their%20competitors) - If anyone is wondering why the focus state is not working in Safari, it is because they do not want to support it for links and buttons so that they remain consistent with the operating system
 
 ## Author
 
