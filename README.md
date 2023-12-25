@@ -30,14 +30,17 @@ Users should be able to:
 ### Screenshots
 
 ![Three column preview card desktop version](./public/images/three-column-preview-card-component-desktop.png)
-![Three column preview card mobileversion](./public/images//three-column-preview-card-component-mobile.png)
+
+![Three column preview card mobileversion](./public/images/three-column-preview-card-component-mobile.png)
 
 ### PageSpeed Insights results
 [Mobile version](https://pagespeed.web.dev/analysis/https-three-column-preview-card-rupali-netlify-app/ovfjmkq240?form_factor=mobile)
-![PageSpeed insights mobile](./public/images/three-column-preview-card-component-mobile.png)
+
+![PageSpeed insights mobile](./public/images/pageSpeed-insights-mobile.png)
 
 [Desktop version](https://pagespeed.web.dev/analysis/https-three-column-preview-card-rupali-netlify-app/ovfjmkq240?form_factor=desktop)
-![PageSpeed insights desktop](./public/images/three-column-preview-card-component-desktop.png)
+
+![PageSpeed insights desktop](./public/images/pageSpeed-insights-desktop.png)
 
 ### Links
 
