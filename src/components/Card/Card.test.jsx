@@ -1,4 +1,4 @@
-import { screen, render, fireEvent } from "@testing-library/react";
+import { screen, render } from "@testing-library/react";
 import { Card } from "./Card";
 import { CardData } from "../../cardData";
 
@@ -8,7 +8,6 @@ describe("Card component", () => {
     anchor.href = url;
     document.body.appendChild(anchor);
     anchor.click();
-    document.body.removeChild(anchor);
   };
 
   Object.entries(CardData).forEach(([key, value]) => {
@@ -19,14 +18,16 @@ describe("Card component", () => {
       const descriptionElement = screen.getByText(value.description);
       const imageElement = screen.getByAltText(value.altText);
       const buttonElement = screen.getByText(/Learn More/i);
-      fireEvent.click(buttonElement);
+      clickButton(window.location.href + "#main");
 
       expect(titleElement).toBeInTheDocument();
       expect(descriptionElement).toBeInTheDocument();
       expect(imageElement).toBeInTheDocument();
       expect(imageElement).toHaveAttribute("src", value.src);
       expect(buttonElement).toBeInTheDocument();
-      clickButton(window.location.href + "#main");
+      expect(document.body.querySelector("a").href).toBe(
+        window.location.href + "#main"
+      );
     });
   });
 });
