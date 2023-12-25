@@ -69,27 +69,47 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+- Ouline in CSS is for the line outside the element's border. It does not affect the layout as it does not take up space. There were scenarios where using border for one state and  not using for the other state led to change of the button's height since border is considered part of border-box. Utilising outline did not cause the chanhge in button's height.
+- Sometimes using role attribute for a link tag can be better than using the native button tag. For insatnce, lear more typically navigates one to a new section or page. Using link can enhance the SEO wherereas button is not considered for indexing and thus does not contribute to the SEO
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<a
+      role="button"
+      aria-label={"Learn more about " + props.title}
+      href="#main"
+    >
+      learn more
+    </a>
 ```
+
+- It is better to make border radius, border width, box shadow in rem for visual purpose. Otherwise buttons can appear rectangular instead of rounded when the browser's font setting is altered to a higher value
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+/* Borders */
+$border-radius-none: 0px;
+$border-radius-soft: 0.5rem; /* 8px */
+$border-radius-rounded: 1.5625rem; /* 25px; */
+$border-size-s: 0.125rem; /* 2px */
+$border-size-m: 0.25rem; /* 4px */
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+/* Box shadows */
+$box-shadow-action-focus: 0rem 0rem 0rem 0.25rem $neutral-white-color-opacity-2;
+```
+- When aria-label is used, the screen reader reads the aria-label and not the text content of the tag. Hence, it is imperative to write descrpetive value for aria-label
+- Outline is rectangular in Safari, hence instead of outline, I resorted to the usage of box-shdow
+```css
+&:focus {
+      @extend %link-pseudo-class-definitions;
+      box-shadow: $box-shadow-action-focus;
+      outline: none;
+    }
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+    &:focus-visible {
+      @extend %link-pseudo-class-definitions;
+      box-shadow: $box-shadow-action-focus;
+      outline: none;
+    }
+```
+- Learnt how :focus-visible is different from :focus. The former indicates that the focus is coming from non-mouse input like keyboard. :focus is mainly for mouse input.
 
 ### Continued development
 
