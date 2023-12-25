@@ -1,7 +1,6 @@
 import { render } from "@testing-library/react";
-import { axe } from "jest-axe";
+import { axe, toHaveNoViolations } from "jest-axe";
 import { GroupCard } from "./GroupCard";
-import { toHaveNoViolations } from "jest-axe";
 
 // Add the custom matcher to Jest
 expect.extend(toHaveNoViolations);
