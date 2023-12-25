@@ -33,26 +33,27 @@ describe("Footer component", () => {
   });
 
   test("footer links open in respective URLs", () => {
-    const openInNewTab = (url) => {
+    const openInNewTab = (url, className) => {
       const anchor = document.createElement("a");
       anchor.href = url;
+      anchor.className = className;
       anchor.target = "_blank";
       document.body.appendChild(anchor);
       anchor.click();
-      document.body.removeChild(anchor);
     };
     render(<Footer />);
-    openInNewTab("https://www.frontendmentor.io/?ref=challenge");
+    openInNewTab(
+      "https://www.frontendmentor.io/?ref=challenge",
+      "js-front-end-mentor"
+    );
+    expect(document.body.querySelector("a").href).toBe(
+      "https://www.frontendmentor.io/?ref=challenge"
+    );
+    openInNewTab("https://www.linkedin.com/in/rupali-rc/", "js-author-name");
     setTimeout(() => {
       expect(document.body.querySelector("a").href).toBe(
-        "https://www.frontendmentor.io/?ref=challenge"
+        "https://www.linkedin.com/in/rupali-rc/"
       );
-      openInNewTab("https://www.linkedin.com/in/rupali-rc/");
-      setTimeout(() => {
-        expect(document.body.querySelector("a").href).toBe(
-          "https://www.linkedin.com/in/rupali-rc/"
-        );
-      }, 100);
     }, 100);
   });
 });
