@@ -7,6 +7,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshots](#screenshots)
+  - [PageSpeed Insights results](#pagespeed-insights-results)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -28,8 +29,15 @@ Users should be able to:
 
 ### Screenshots
 
-![Three column preview card desktop version](./public/images/Three-column-preview-card-component-desktop.png)
-![Three column preview card mobileversion](./public/images//Three-column-preview-card-component-mobile.png)
+![Three column preview card desktop version](./public/images/three-column-preview-card-component-desktop.png)
+![Three column preview card mobileversion](./public/images//three-column-preview-card-component-mobile.png)
+
+### PageSpeed Insights results
+[Mobile version](https://pagespeed.web.dev/analysis/https-three-column-preview-card-rupali-netlify-app/ovfjmkq240?form_factor=mobile)
+![PageSpeed insights mobile](./public/images/three-column-preview-card-component-mobile.png)
+
+[Desktop version](https://pagespeed.web.dev/analysis/https-three-column-preview-card-rupali-netlify-app/ovfjmkq240?form_factor=desktop)
+![PageSpeed insights desktop](./public/images/three-column-preview-card-component-desktop.png)
 
 ### Links
 
@@ -44,13 +52,15 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [SCSS](https://sass-lang.com/) - For styles
+- [React](https://reactjs.org/) - JS library for writing reusable components
+- [SCSS](https://sass-lang.com/) - For styling
 
 ### Tested with
 
-- To be written
--
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - React Testing Library helps you test your React components to make sure they work as expected when users interact with them.
+- AXE Dev Tools -  allows you to perform automated accessibility testing on React components 
+- Browsers: Google Chrome, Firefox, Safari, Brave, Microsoft Edge
+- Devices: 
 
 ### What I learned
 
