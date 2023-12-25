@@ -74,12 +74,12 @@ Users should be able to:
 
 ```html
 <a
-      role="button"
-      aria-label={"Learn more about " + props.title}
-      href="#main"
-    >
-      learn more
-    </a>
+  role="button"
+  aria-label={"Learn more about " + props.title}
+  href="#main"
+>
+  learn more
+</a>
 ```
 
 - It is better to make border radius, border width, box shadow in rem for visual purpose. Otherwise buttons can appear rectangular instead of rounded when the browser's font setting is altered to a higher value
@@ -98,16 +98,16 @@ $box-shadow-action-focus: 0rem 0rem 0rem 0.25rem $neutral-white-color-opacity-2;
 - Outline is rectangular in Safari, hence instead of outline, I resorted to the usage of box-shdow
 ```css
 &:focus {
-      @extend %link-pseudo-class-definitions;
-      box-shadow: $box-shadow-action-focus;
-      outline: none;
-    }
+  @extend %link-pseudo-class-definitions;
+  box-shadow: $box-shadow-action-focus;
+  outline: none;
+}
 
-    &:focus-visible {
-      @extend %link-pseudo-class-definitions;
-      box-shadow: $box-shadow-action-focus;
-      outline: none;
-    }
+&:focus-visible {
+  @extend %link-pseudo-class-definitions;
+  box-shadow: $box-shadow-action-focus;
+  outline: none;
+}
 ```
 - Learnt how :focus-visible is different from :focus. The former indicates that the focus is coming from non-mouse input like keyboard. :focus is mainly for mouse input.
 
