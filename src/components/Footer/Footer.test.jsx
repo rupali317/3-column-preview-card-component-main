@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import { Footer } from "./Footer";
 
 describe("Footer component", () => {
@@ -46,14 +46,14 @@ describe("Footer component", () => {
       "https://www.frontendmentor.io/?ref=challenge",
       "js-front-end-mentor"
     );
-    expect(document.body.querySelector("a").href).toBe(
+
+    expect(document.body.querySelector("a.js-front-end-mentor").href).toBe(
       "https://www.frontendmentor.io/?ref=challenge"
     );
+
     openInNewTab("https://www.linkedin.com/in/rupali-rc/", "js-author-name");
-    setTimeout(() => {
-      expect(document.body.querySelector("a").href).toBe(
-        "https://www.linkedin.com/in/rupali-rc/"
-      );
-    }, 100);
+    expect(document.body.querySelector("a.js-author-name").href).toBe(
+      "https://www.linkedin.com/in/rupali-rc/"
+    );
   });
 });
