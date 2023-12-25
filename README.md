@@ -60,12 +60,12 @@ Users should be able to:
 
 ### Tested with
 
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - React Testing Library helps you test your React components to make sure they work as expected when users interact with them.
-- AXE Dev Tools -  allows you to perform automated accessibility testing on React components 
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - React Testing Library helps test React components to make sure they work as expected when users interact with them.
+- AXE Dev Tools -  allows to perform automated accessibility testing on React components 
 - Browsers used for testing: Google Chrome, Firefox, Safari, Brave, Microsoft Edge
 - Devices: 
   - (Real) MacBook Pro (15 inch), Samsung Galaxy A33 5G, Samsung Galaxy S20+
-  - (Virtual) The mobile and tablet devices under Chrome's dev console
+  - (Virtual) The mobile and tablet devices mentioned under Chrome's dev console
 
 ### What I learned
 
