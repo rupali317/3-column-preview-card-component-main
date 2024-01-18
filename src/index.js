@@ -10,12 +10,12 @@ const footer = ReactDOM.createRoot(document.getElementById("footer"));
 
 groupCard.render(
   <React.StrictMode>
-    <GroupCard></GroupCard>
+    <GroupCard />
   </React.StrictMode>
 );
 footer.render(
   <React.StrictMode>
-    <Footer></Footer>
+    <Footer />
   </React.StrictMode>
 );
 
